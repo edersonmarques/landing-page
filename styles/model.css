@@ -33,14 +33,17 @@ h1, h2, h3 {
 }
 
 /* ---- Navigation ---- */
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 24px;
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 24px 20px;
 }
+
 
 .logo {
   font-size: 1.4rem;
