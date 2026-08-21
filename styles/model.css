@@ -36,7 +36,6 @@ h1, h2, h3 {
 
 nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   gap: 24px;
   max-width: var(--max-width);
