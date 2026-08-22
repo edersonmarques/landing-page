@@ -15,6 +15,7 @@
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
     line-height: 1.6;
+    color: #1a1a1a;
 }
 
 #logo {
@@ -32,9 +33,13 @@ nav {
 }
 
 .hero {
+    /*pasted from model*/
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1600') center/cover;
+    /**/
     display: flex;
     flex-direction: column;
-    background-color: #574b4b;
+    /*background-color: #574b4b;*/
     min-height: 90vh;
 }
 .nav-links {
@@ -87,4 +92,27 @@ h1, h2, h3 {
     padding: 14px 32px;
     border-radius: 6px;
     font-weight: bold;
+}
+
+#benefits-section {
+    max-width: 1100px;
+    padding: 80px 20px;
+    margin: 0 auto;
+    text-align: center;
+} 
+
+h2 {
+    font-size: 2.2rem;
+    margin-bottom: 48px;
+}
+
+#benefits-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    /*entender grid melhor*/
+}
+
+#membership-plans-section {
+    background: var(--color-light);
 }
