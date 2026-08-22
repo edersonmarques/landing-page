@@ -92,6 +92,13 @@ h1, h2, h3 {
     padding: 14px 32px;
     border-radius: 6px;
     font-weight: bold;
+    display: inline-block;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.button-primary:hover {
+  background: #e04400;
+  transform: translateY(-2px);
 }
 
 #benefits-section {
@@ -113,6 +120,117 @@ h2 {
     /*entender grid melhor*/
 }
 
+.benefits-item {
+    transition: transform 0.3s ease;
+}
+
+.benefits-item:hover {
+  transform: translateY(-6px);
+}
+
+.benefits-item h3 {
+  color: var(--color-primary);
+  margin-bottom: 12px;
+  font-size: 1.15rem;
+}
+
+.benefits-item p {
+  font-size: 0.95rem;
+  color: #444;
+}
+
 #membership-plans-section {
     background: var(--color-light);
+    text-align: center;
+    padding: 80px 20px;
+}
+
+#membership-plans-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.membership-plans-item {
+    text-align: left;
+    background: white;
+    border-radius: 10px;
+    padding: 40px 28px;
+    position: relative;
+}
+
+.price {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: var(--color-dark);
+    margin-bottom: 24px;
+}
+
+span {
+    font-size: 1rem;
+    color: #777;
+    font-weight: normal;
+}
+
+.membership-plans-item li {
+    color: #444;
+    padding: 8px 0;
+    border-bottom: 1px  solid #eee;
+}
+
+.button-secondary {
+    color: var(--color-dark);
+    padding: 12px 30px;
+    border-radius: 6px;
+    font-weight: bold;
+    border: var(--color-dark) solid 2px;
+    display: inline-block;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.button-secondary:hover {
+    background: var(--color-dark);
+    color: white;
+}
+
+.membership-plans-item ul {
+    margin-bottom: 28px;
+}
+
+.membership-plans-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+}
+
+.featured {
+    background: var(--color-dark);
+    transform: scale(1.05);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+}
+
+.featured h3 {
+    color: white;
+}
+
+.featured .price {
+    color: white;
+}
+
+.featured li {
+    color: #ddd;
+    border-bottom: 1px solid #333;
+}
+
+.badge {
+    position: absolute;
+    top: -14px;
+    right: 24px;
+    background: var(--color-primary);
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
 }
