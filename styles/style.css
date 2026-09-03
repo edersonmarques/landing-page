@@ -284,3 +284,24 @@ span {
     padding-bottom: 20px;
     color: #555;
 }
+
+#final-cta {
+    background: var(--color-primary);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+#final-cta h2 {
+    margin-bottom: 12px;
+}
+
+#final-cta p {
+    margin-bottom: 28px;
+    opacity: 0.9;
+}
+
+#final-cta a {
+    background: white;
+    color: var(--color-primary);
+}
