@@ -305,3 +305,19 @@ span {
     background: white;
     color: var(--color-primary);
 }
+
+footer {
+    background: var(--color-dark);
+    color: white;
+    text-align: center;
+    padding: 32px 20px;
+}
+
+footer ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 12px;
+    color: #ccc;
+    
+}
